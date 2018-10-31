@@ -1,0 +1,300 @@
+.lyt-section {
+    padding: 90px 0;
+
+    .bs-heading-desc {
+        margin-bottom: 80px;
+
+        &.typ-title {
+            margin-bottom: 55px;
+        }
+
+        &.noBtmMargin {
+            margin-bottom: 0;
+        }
+
+        &.typ-no-top-margin {
+            margin-top: 0;
+        }
+
+        &.typ-xs-btm-margin {
+            margin-bottom: 20px;
+        }
+
+        &.typ-btm-margin-half {
+            margin-bottom: 40px;
+        }
+    }
+
+    &.lyt-news {
+        .bs-heading-desc {
+            margin: 80px 0 0 0;
+
+            &.typ-no-top-margin {
+                margin-top: 0;
+            }
+        }
+    }
+
+    &.lyt-search {
+        .bs-tabs {
+            .nav-tabs {
+                margin-top: 65px;
+                border-bottom-width: 1px;
+            }
+        }
+    }
+
+    &.typ-grid {
+        padding-bottom: 60px;
+    }
+
+    &.typ-black {
+        background: #2d2d2d;
+    }
+
+    &.typ-grey {
+        background: #f2f2f2;
+    }
+
+    &.typ-fullwidth {
+        .bs-slider {
+            margin: 0 -15px;
+        }
+    }
+
+    &.typ-bgimg-desc {
+        &.typ-bgflower {
+            height: 480px;
+            background-image: url("../images/bgflower.png");
+            background-repeat: no-repeat;
+            background-position: center right;
+            background-size: contain;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &.typ-bgimg {
+        .lyt-bg {
+            &.set-bg {
+                padding: 60px;
+            }
+        }
+    }
+
+    &.typ-tabs {
+        padding: 60px 0;
+
+        .nested-tablist {
+            .nested-tab-title {
+                font-size: 26px;
+                line-height: 28px;
+                color: $clr-base;
+                font-weight: $font-black;
+                margin-bottom: 25px;
+            }
+
+            .nested-item {
+                margin-bottom: 60px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    &.typ-top-margin {
+        margin-top: 90px;
+    }
+
+    &.typ-no-top-pad {
+        padding-top: 0;
+    }
+
+    &.typ-no-btm-pad {
+        padding-bottom: 0;
+    }
+
+    &.typ-no-pad-sections {
+        .bs-tabs {
+            margin-bottom: 30px;
+        }
+    }
+
+    .lyt-form {
+        .bs-heading-desc {
+            text-align: left;
+            margin-top: 30px;
+        }
+    }
+
+    &.lyt-prd {
+        .bs-heading-desc {
+            margin-bottom: 40px;
+        }
+
+        .prod-img {
+            width: 900px;
+            margin: 0 auto;
+
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        .bs-col {
+            li {
+                text-align: left;
+
+                .bs-heading-desc {
+                    margin-bottom: 0;
+                }
+
+                &:first-child {
+                    .bs-heading-desc {
+                        border-right: 1px solid #e1e1e1;
+                    }
+                }
+            }
+        }
+    }
+
+    &.lyt-keythumb-slider {
+        .show-ele {
+            opacity: 0;
+            visibility: hidden;
+            height: 0;
+
+            &.active {
+                opacity: 1;
+                visibility: visible;
+                height: auto;
+            }
+        }
+    }
+
+    &.typ-globalsearch {
+        position: relative;
+        min-height: 200px;
+    }
+}
+
+
+@media (max-width: $mobile-breakpoint) {
+    .lyt-section {
+        padding: 60px 0;
+
+        &.typ-grid {
+            padding-bottom: 30px;
+        }
+
+        .bs-heading-desc {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        &.typ-bgimg-desc {
+            &.typ-bgflower {
+                height: auto;
+                background-size: 37%;
+                background-position: bottom right;
+            }
+        }
+
+        &.typ-tabs {
+            padding: 30px 0;
+
+            .nested-tablist {
+                .nested-tab-title {
+                    font-size: 18px;
+                    line-height: 20px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        &.typ-bgimg {
+            padding: 20px;
+
+            .lyt-bg {
+                &.set-bg {
+                    padding: 40px 18px;
+                    position: relative;
+                    background-position: right center;
+
+                    &:before {
+                        content: "";
+                        background: rgba(0, 0, 0, .7);
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        display: block;
+                    }
+
+                    .heading-parent {
+                        position: relative;
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+
+        &.lyt-prd {
+            .bs-heading-desc {
+                text-align: left;
+
+                &.typ-vertical {
+                    .btn-desc-parnet {
+                        padding-top: 300px;
+                    }
+                }
+            }
+
+            .prod-img {
+                position: absolute;
+                top: 300px;
+                width: 300px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .demo-gallery>ul>li {
+                margin: 15px 0;
+                padding: 0 6px;
+            }
+
+            .bs-col {
+                li {
+                    .bs-heading-desc {
+                        &.typ-sm {
+                            .heading {
+                                .txt {
+                                    &.typ-xs {
+                                        font-size: 18px;
+                                        line-height: 22px;
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+
+                        .btn-desc-parnet {
+                            padding-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.typ-globalsearch {
+            min-height: 185px;
+            padding: 0;
+        }
+    }
+}

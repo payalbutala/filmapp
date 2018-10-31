@@ -1,0 +1,44 @@
+//lyt-form
+.lyt-form {
+    .bs-heading-desc {
+        margin-bottom: 70px;
+        &.typ-sm {
+            .txt {
+                font-size: 26px;
+                line-height: 30px;
+            }
+        }
+    }
+    .bs-icon-text {
+        .icon-title {
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+    .lyt-form {
+        .bs-heading-desc {
+            margin-bottom: 30px;
+        }
+        .bs-icon-text {
+            display: table;
+            .icon-wrap {
+                display: table-cell;
+                margin: 0px;
+            }
+            .icon-title {
+                font-size: 14px;
+                line-height: 18px
+            }
+            .text-wrap {
+                padding-left: 20px;
+                text-align: left;
+            }
+        }
+        .lyt-dowanload {
+            margin-bottom: 20px;
+        }
+    }
+}

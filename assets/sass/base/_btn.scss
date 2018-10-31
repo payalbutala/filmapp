@@ -1,0 +1,10 @@
+.btn {
+    border: 0;
+    background: transparent;
+
+    &.btn-black {
+        color: $clr-root;
+        background: $clr-base;
+        padding: 6px 18px;
+    }
+}

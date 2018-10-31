@@ -1,0 +1,116 @@
+//bs-header
+.bs-form {
+    padding: 0 15px;
+
+    .form-group {
+        .form-label {
+            text-transform: capitalize;
+            font-size: 16px;
+            color: #aaa;
+            display: block;
+            font-weight: $font-medium;
+            margin-bottom: 10px;
+        }
+
+        &.typ-anim {
+            position: relative;
+            margin-bottom: 30px;
+
+            .form-label {
+                position: absolute;
+                bottom: 26px;
+                left: 0;
+                transition: all 0.3s ease;
+                font-size: 15px;
+                line-height: 18px;
+                color: #a0a0a0;
+                font-weight: 400;
+                z-index: 0;
+            }
+
+            .fill-line {
+                height: 1px;
+                left: 0;
+                bottom: 0;
+                width: 0;
+                right: 0;
+                position: absolute;
+                transition: all 0.3s ease;
+                background: #e32c23;
+                z-index: 2;
+            }
+
+            .form-control {
+                height: 20px;
+                padding: 10px 0;
+                position: relative;
+                z-index: 1;
+                background: transparent;
+                font-weight: 700;
+                width: 100%;
+                border: 0;
+                border-bottom: 1px solid #b4b4b6;
+
+                // &:focus {
+                //     &+.form-label {
+                //         bottom: 35px;
+                //         font-weight: 400;
+                //     }
+
+                //     &+.form-label+.fill-line {
+                //         width: 100%;
+                //     }
+                // }
+            }
+        }
+
+        .form-control {
+            height: 40px;
+            padding: 10px 0;
+            position: relative;
+            z-index: 1;
+            background: transparent;
+            font-weight: 700;
+            @include border-radius(0);
+
+            @include input-placeholder {
+                font-size: 16px;
+                color: $clr-base;
+                font-weight: $font-regular;
+            }
+        }
+
+        &.search-group {
+            display: block;
+            border-bottom: 1px solid #79848e96;
+            width: 400px;
+            margin: 0 auto;
+
+            .form-control {
+                color: #343434;
+                font-size: 16px;
+                line-height: 26px;
+                border: 0;
+                padding-left: 5px;
+                height: auto;
+            }
+        }
+    }
+}
+
+
+@media (max-width: $mobile-breakpoint) {
+
+    //bs-header
+    .bs-form {
+
+        .form-group {
+
+
+            &.search-group {
+                width: 80%;
+
+            }
+        }
+    }
+}

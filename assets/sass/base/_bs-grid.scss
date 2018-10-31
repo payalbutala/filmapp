@@ -1,0 +1,106 @@
+.bs-grid {
+    margin-top: 50px;
+
+    .grid-item {
+        float: left;
+        width: 20%;
+        margin-bottom: 30px;
+        // margin: 0;
+
+        .data-wrap {
+            margin: 15px;
+            position: relative;
+            background: #f6f6f6;
+
+            .btn-del {
+                background: $clr-root url("../images/icons8-close-window-26.png") no-repeat;
+                text-indent: -9999px;
+                height: 26px;
+                width: 26px;
+                position: absolute;
+                top: -12px;
+                right: -12px;
+                border: 0;
+                border-radius: 6px;
+                // &:after,
+                // &:before {
+                //     content: "";
+                //     background: $clr-primary;
+                //     width: 25px;
+                //     height: 2px;
+                //     display: block;
+                //     transform: rotate(50deg);
+                // }
+
+                // &:before {
+                //     transform: rotate(-50deg);
+                // }
+            }
+
+            .set-bg {
+                border-bottom: 5px solid $clr-primary;
+            }
+
+            .cont-wrap {
+                padding: 10px 10px;
+
+                .mv-title {
+                    color: $clr-base;
+                    font-size: 16px;
+                    font-weight: 600;
+
+                }
+
+                .mv-year {
+                    display: block;
+                    color: $clr-base;
+                    font-size: 14px;
+                    margin-top: 4px;
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width: $mobile-breakpoint) {
+    .bs-grid {
+        margin-top: 30px;
+
+        .grid-item {
+            width: 50%;
+            margin-bottom: 20px;
+            // margin: 0;
+
+            .data-wrap {
+                margin: 15px;
+
+                .btn-del {
+                    background: $clr-root url("../images/icons8-close-window-26.png") no-repeat;
+                    top: -13px;
+                    right: -12px;
+                    border: 0;
+                    border-radius: 6px;
+                }
+
+                .set-bg {
+                    border-bottom-width: 3px;
+                }
+
+                .cont-wrap {
+                    padding: 6px;
+
+                    .mv-title {
+                        font-size: 14px;
+
+                    }
+
+                    .mv-year {
+                        font-size: 12px;
+                    }
+                }
+
+            }
+        }
+    }
+}

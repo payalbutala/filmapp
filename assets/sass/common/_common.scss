@@ -1,0 +1,37 @@
+.cm-not-in-page {
+    left: -99999px;
+    position: absolute;
+    top: -99999px;
+}
+
+.cm-line-break {
+    display: block;
+}
+
+.cm-container {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.set-bg {
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    height: 300px;
+    display: block;
+}
+
+.cm-center-wrapper {
+    text-align: center;
+}
+
+
+@media (max-width: $mobile-breakpoint) {
+    .cm-container {
+        width: auto;
+    }
+
+    .set-bg {
+        height: 240px;
+    }
+}

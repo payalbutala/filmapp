@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Media - Assignment</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Media - Assignment">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+    <style>
+        /* li{
+        display: inline-block;
+        margin: 20px;
+    }
+    form li{
+            display:block;
+        
+    } */
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="bs-header">
+            <div class="cm-container">
+
+                <nav class="main-nav">
+                    <a class="logo-wrap" href="#">
+                        <img src="https://www.media.net/Content/New/assets/images/mnet.svg" alt="logo" />
+                    </a>
+                    <ul class="action-wrap">
+                        <li>
+                            <a href="#" id="myBtn" class="link-name">Add Movie</a>
+                        </li>
+                        <li>
+                            <a href="#" id="sortTitle" class="link-name">Sort by Name</a>
+                        </li>
+                        <li>
+                            <a href="#" id="sortYear" class="link-name">Sort by Year</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+    <h1 class="cm-not-in-page">media.net Movie List</h1>
+    <section>
+        <div class="lyt-section">
+            <div class="cm-container">
+                <div class="bs-form">
+                    <form>
+                        <div class="form-group search-group">
+                            <i class="icon icon-search"></i>
+                            <input type="text" class="form-control" id="ip-search" placeholder="Search by title">
+                        </div>
+                    </form>
+                </div>
+                <ul id="movieList" class="bs-grid"></ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Modal -->
+    <div id="myModal" class="bs-modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span id="close">&times;</span>
+                <h2 class="modal-title">Modal Header</h2>
+            </div>
+            <div class="modal-body">
+                <!-- <p>Some text in the Modal Body</p> -->
+                <div class="bs-form">
+                    <form name="form_movie" id="form_movie">
+                        <div class="col-md-10 col-md-offset-1 col-xs-12">
+                            <ul class="clearfix">
+                                <li class="col-md-6">
+                                    <div class="form-group typ-anim">
+                                        <input class="form-control" id="name" required="">
+                                        <label class="form-label" for="name">Movie Name</label>
+                                        <span class="fill-line"></span>
+                                    </div>
+                                </li>
+                                <li class="col-md-6">
+                                    <div class="form-group typ-anim">
+                                        <input class="form-control" id="year" required="">
+                                        <label class="form-label" for="year">Year</label>
+                                        <span class="fill-line"></span>
+                                    </div>
+                                </li>
+                                <li class="col-md-6">
+                                    <div class="form-group typ-anim typ-upload">
+                                        <input class="form-control" id="posterUrl" required="">
+                                        <label class="form-label" for="posterUrl">Movie Poster URL</label>
+                                        <span class="fill-line"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="cm-center-wrapper">
+                                <input type="button" id="add" class="btn btn-black" value="SUBMIT">
+                                <input type="button" id="cancel" class="btn btn-red js-close" value="CANCEL">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <h3>Modal Footer</h3>
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+</body>
+
+</html>
